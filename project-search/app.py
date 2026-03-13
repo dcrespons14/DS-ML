@@ -1,8 +1,8 @@
 import streamlit as st
-import utils
-from preprocessing import preprocess_text
+import src.utils as utils
+from src.preprocessing import preprocess_text
 from sklearn.feature_extraction.text import TfidfVectorizer
-from search_engine import search_projects
+from src.search_engine import search_projects
 import re
 
 
