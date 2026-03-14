@@ -3,6 +3,7 @@ import src.utils as utils
 from src.preprocessing import preprocess_text
 from sklearn.feature_extraction.text import TfidfVectorizer
 from src.search_engine import search_projects
+from src.db import insert_query
 import re
 
 
@@ -257,7 +258,7 @@ def main():
 
     query = st.text_input("Search projects")
 
-    if query:
+    if query:      
         results = search_projects(
             query,
             projects,
@@ -286,6 +287,11 @@ def main():
                 )
         else:
             st.info("Sorry, no projects matched your search. You can try something else.")
+
+        try:
+            insert_query(query, st.secrets["SUPABASE_URL"], st.secrets["SUPABASE_KEY"])
+        except:
+            pass  # Ignore errors if query can't be inserted
 
 
 if __name__ == "__main__":

@@ -20,7 +20,11 @@
 - `search_projects`
     Searches for projects most relevant to a user query using cosine similarity within a TF-IDF vector space.
 
-### src/app.py
+### src/db.py
+- `insert_query`
+    Inserts the user query on the SQL database.
+
+### app.py
 - `build_search_engine`
     Loads all project documentations and preprocesses the texts to construct a TF-IDF representation of the project descriptions that can be used to compute similarities with user queries.
 
