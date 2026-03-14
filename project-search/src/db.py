@@ -1,4 +1,4 @@
-from supabase import create_client, Client
+from supabase import create_client
 
 
 def insert_query(query: str, SUPABASE_URL: str, SUPABASE_KEY: str):
