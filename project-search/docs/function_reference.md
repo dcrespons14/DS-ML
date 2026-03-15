@@ -10,7 +10,7 @@
     Cleans Markdown formatting (`#`, `*`, `-`, backticks, line breaks) from text.
 
 - `find_repository_path()`
-    Automatically finds the DS-ML repository root path starting from the current file and moving up the folder structure.
+    Automatically finds the repository root path starting from the current file and moving up the folder structure.
 
 ### src/preprocessing.py
 - `preprocess_text`

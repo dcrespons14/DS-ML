@@ -20,4 +20,4 @@ Row Level Security (RLS) is enabled on this table to control access.
 A policy is configured to allow `INSERT` operations for clients using the Supabase **publishable key**.  
 This enables the application to log user queries while preventing unrestricted access to the table contents.
 
-Furthermore, both `url` and `key` are securely stored as environment variables in Streamlit using the secrets functionality.
+Furthermore, both `url` and `key` are securely stored as environment variables in `Render` using the secrets functionality.

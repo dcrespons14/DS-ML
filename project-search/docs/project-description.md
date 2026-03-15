@@ -13,7 +13,7 @@ The app compiles a corpus of documents such as this one (using the `os` library)
 
 The system uses **TF-IDF vectorization** to create a multidimensional vector space representing the repository corpus. **Cosine similatiry** is then used to match user queries against this space, returning the most relevant projects.
 
-User queries are logged into an SQL database (PostgreSQL hosted on Supabase) as a means of gathering feedback. Several layers of security are applied to guarantee confidentiality at all times.
+User queries are logged into an SQL database (PostgreSQL hosted on Supabase) as a means of gathering feedback. Several layers of security, including RLS and the use of environment variables, are applied to guarantee confidentiality at all times.
 See `docs/db.md` for further information on the database setup.
 
-The app is hosted on `Streamlit` and can be accessed at: https://portfolio-search.streamlit.app/
+The app is hosted on `Render` and can be accessed at: https://portfolio-search.onrender.com
